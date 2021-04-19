@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap");
+:root {
+  --color-primary: #ea5974;
+  --color-primary-light:#fc8a9f;
+  --color-secondary:#1764ec;
+  --color-grey-light-1: #f9f7f6;
+  --color-grey-light-2: #aaa;
+  --color-grey-dark-1: #54483a;
+  --color-grey-dark-2: #6d5d4b;
+  --color-dark: #1f1f1f;
+  --grey-light-1: #faf9f9;
+  --grey-light-2: #f4f2f2;
+  --grey-light-3: #f0eeee;
+  --grey-light-4: #ccc;
+  --grey-dark-1: #333;
+  --grey-dark-2: #777;
+  --grey-dark-3: #999;
+  --shadow-dark:  0 2rem 6rem rgba(0,0,0,.3); }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "nunito", sans-serif;
+  color: var(--color-grey-dark-2); }
+
+.container {
+  margin: 3px; }
+
+::selection {
+  background-color: none; }
+
+.header-ribbon {
+  display: flex;
+  align-items: center; }
+  .header-ribbon > span {
+    font-size: 2rem;
+    color: var(--color-primary);
+    font-weight: bold; }
+
+.header-record {
+  margin-right: 1rem;
+  height: 3rem;
+  width: 3rem;
+  fill: var(--color-primary); }
+
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.header-logos {
+  display: flex;
+  align-items: center; }
+
+.header-logo-1 {
+  margin-left: 1rem; }
+
+.header-user {
+  height: 3rem;
+  width: 3rem;
+  fill: var(--color-primary); }
+
+.header-bell {
+  height: 2rem;
+  width: 2rem;
+  fill: var(--color-primary); }
+
+.desc {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--color-primary);
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-dark);
+  margin-bottom: 2rem; }
+  .desc-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 8rem; }
+    .desc-box-1 {
+      border-left: 1px solid var(--grey-light-3); }
+  .desc-upper {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 54px;
+    width: 54px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    background-color: var(--grey-light-1);
+    padding: 2rem 0; }
+  .desc-num {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    color: var(--grey-light-1);
+    text-transform: uppercase; }
+  .desc-let {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: var(--grey-light-1); }
+
+.currency {
+  margin-top: 4rem; }
+  .currency-box {
+    background-color: var(--color-grey-light-2);
+    padding: 1rem;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    font-weight: 600; }
+  .currency-form {
+    padding: 1rem .5rem; }
+  .currency-btns {
+    display: flex;
+    margin: 1rem; }
+    .currency-btns > *:not(:last-child) {
+      margin-right: 1rem; }
+  .currency-button {
+    border: none;
+    padding: 1rem 2rem;
+    background-color: var(--color-secondary);
+    color: var(--grey-light-1);
+    border-radius: 5px;
+    cursor: pointer; }
+
+.activity {
+  margin-top: 2rem; }
+  .activity-list {
+    list-style: none; }
+  .activity-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--grey-light-4); }
+  .activity-itemBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+
+.footer {
+  margin-top: 12rem; }
+  .footer-logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; }
+  .footer-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .footer-icon:link, .footer-icon:active {
+      font-size: 1.3rem;
+      text-transform: capitalize;
+      color: var(--color-primary);
+      text-decoration: none; }
+    .footer-icon:visited {
+      color: var(--color-primary-light); }
+  .footer-logo {
+    height: 3rem;
+    width: 3rem;
+    fill: var(--color-primary);
+    margin-bottom: .5rem; }
+
+.ft-icon {
+  color: var(--color-primary-light); }
